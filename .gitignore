@@ -1,0 +1,8 @@
+pihole.env
+
+
+etc-pihole/*
+!etc-pihole/.gitkeep
+
+etc-dnsmasq/*
+!etc-dnsmasq/.gitkeep

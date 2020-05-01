@@ -1,0 +1,27 @@
+#+Title: pihole-docker
+#+Author: Aaron Kuehler
+#+Description: Run pihole (https://pi-hole.net/) as a docker-compose service.
+
+Run [[https://pi-hole.net/][pihole]] as a docker-compose service.
+
+* Getting started
+
+** Configuration
+
+=pihole= and =dnsmasq= configuration are stored in git-ignored, bind
+volumes back to the host filesystem - =./etc-pihole= and
+=./etc-dnsmasq= respectively.
+
+1. Place the example environment configuration =cp pihole.env.example pihole.env=
+2. Replace example values
+
+** Running the service
+
+#+begin_src sh
+docker-compose up -d
+#+end_src
+
+* References
+
+- [[https://pi-hole.net/][pi-hole.net - The pihole project's homepage]]
+- [[https://github.com/pi-hole/docker-pi-hole/][The official pihole docker image]]
